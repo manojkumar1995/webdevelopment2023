@@ -1,0 +1,11 @@
+Git general commands for adding and commiting file:
+  git status
+  git add index.html
+  git commit -m "added style tag and discussed about id's and class attributes"
+  git push
+
+Additional commands for configuring Git:
+
+  git config --global user.email "obulreddyg27@gmail.com"
+  git config --global user.name "obul63"
+  
