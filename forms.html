@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>HTML Forms Example for input type button vs normal button</h2>
+
+    <form action="/login">
+      <label for="fname"> First name: </label><br />
+      <input type="text" id="fname" name="fname" value="John" />
+      <br />
+      <label for="lname"> Last name: </label>
+      <br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+      <br /><br />
+      <input type="button" onclick="display()" value="Login1" />
+
+      <button class="loginbtn" onclick="display1()">Login2</button>
+      <input type="submit" value="Login3" />
+    </form>
+
+    <p>
+      If you click the "Submit" button, the form-data will be sent to a page
+      called "/action_page.php".
+    </p>
+
+    <script>
+      function display() {
+        alert("Hello World");
+      }
+      function display1() {
+        alert("please check your details before submit");
+      }
+    </script>
+  </body>
+</html>
