@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body{
-            background-color: aquamarine;
-        }
-        .one{
-            background-color: white;
-            color: black;
-        }
-        .two{
-            background-color:darkslateblue;
-            color: white;
-        }
-        .setcolor{
-            color:slateblue;
-            font-size: 50px;
-        }
+      body {
+        background-color: aquamarine;
+      }
+      .one {
+        background-color: white;
+        color: black;
+      }
+      .two {
+        background-color: darkslateblue;
+        color: white;
+      }
+      .setcolor {
+        color: slateblue;
+        font-size: 50px;
+      }
     </style>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--div and span tag difference-->
     <div class="one">
-        <h1>Hello <span class="setcolor">World</span></h1>
-        <p>HHHHHHHHHHHHHHH</p>
+      <h1>Hello <span class="setcolor">World</span></h1>
+      <p>HHHHHHHHHHHHHHH</p>
     </div>
     <div class="two">
-        <h1>Welcome</h1>
-    </div><hr>
-    <marquee direction="up">Lorem ipsum dolor sit amet.</marquee><hr>
-    <p>X<sup>2</sup>+Y<sup>2</sup>=1</p><hr>
-    <h1>TATA<sup>R</sup></h1><hr>
-    <p>X<sub>2</sub>+Y<sub>2</sub>= 0</p>
-
-</body>
+      <h1>Welcome</h1>
+    </div>
+    <!-- marquee used for scrollable text -->
+    <marquee direction="up">Lorem ipsum dolor sit amet.</marquee>
+    <!-- abbr tag ex -->
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    <h1>The article element</h1>
+    <!--article tag example-->
+    <article>
+      <h2>Google Chrome</h2>
+      <p>
+        Google Chrome is a web browser developed by Google, released in 2008.
+        Chrome is the world's most popular web browser today!
+      </p>
+    </article>
+    <!-- short quotation example-->
+    <p>This is <q>some text</q> in a paragraph.</p>
+    <!-- label tag is more important & it's usage with ex..  -->
+    <form action="/action_page.php">
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"/>
+      <label for="javascript">JavaScript</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- var element is used for writing formulas -->
+    <h1>The var element</h1>
+    <p>
+      The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where
+      <var>b</var> is the base, and <var>h</var> is the vertical height.
+    </p>
+  </body>
 </html>
