@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs in Html</title>
+</head>
+<body>
+    <input><br><!--Basic inputs-->
+    <input type="text" name="firstname" id="firstname" placeholder="firstname" maxlength="10" minlength="1" value=""><br>
+    <input type="number" name="age" id="age" placeholder="liters" value="" min="0.01" max="10">
+    <input type="button" value="default button"><br><hr>
+    <form action="/login" method="post">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email_id" placeholder="Enter your Email" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password" minlength="1" maxlength="8"><br>
+        <label for="company">Company Name</label><br>
+        <input type="text" name="company" placeholder="Enter your Company Name" minlength="1" maxlength="5" required><br>
+        <label for="uploadfile">Upload your Image</label><br>
+        <input type="file" name="uploadfile" id="uploadfile"><br><br>
+
+    <input type="submit" value="Submit">
+    </form><hr>
+</body>
+</html>
