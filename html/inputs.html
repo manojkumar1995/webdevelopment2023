@@ -13,15 +13,43 @@
     <input type="button" value="default button"><br><hr>
     <form action="/login" method="post">
         <label for="email">Email</label><br>
-        <input type="email" name="email" id="email_id" placeholder="Enter your Email" required><br>
+        <input type="email" name="email" id="email_id" placeholder="Enter your Email" autocomplete="off" required><br>
         <label for="password">Password</label><br>
         <input type="password" name="password" id="password" placeholder="Enter your password" minlength="1" maxlength="8"><br>
         <label for="company">Company Name</label><br>
-        <input type="text" name="company" placeholder="Enter your Company Name" minlength="1" maxlength="5" required><br>
+        <input type="text" pattern="[A-za-z]{3}" name="company" placeholder="Enter your Company Name" minlength="1" maxlength="5" autocomplete="off" required><br>
         <label for="uploadfile">Upload your Image</label><br>
         <input type="file" name="uploadfile" id="uploadfile"><br><br>
+        <input type="reset" value="Reset Button">
 
     <input type="submit" value="Submit">
     </form><hr>
+    <form action="/select_dapartment" method="post">
+        <h3>Radio inputs</h3>
+        <label for="gender1">Male</label>
+        <input type="radio" name="gender1" id="male" checked disabled><br>
+        <label for="gender2">Fe-male</label>
+        <input type="radio" name="gender2" id="female"><br>
+        <input type="reset" value="Rest Gender">
+    </form><hr>
+    <form action="/location_type">
+        <h3>Checkbox inputs</h3>
+        <label for="location1">Hyderabad</label>
+        <input type="checkbox" name="lcation1" id="location1" checked ><br>
+        <label for="location2">Bangalore</label>
+        <input type="checkbox" name="location2" id="location2"><br>
+        <input type="reset" value="Rest Gender">
+    </form><hr><hr>
+    <form action="/shifting_timing" method="post">
+        <fieldset>
+            <legend>Select preffered Timings</legend>
+            <label for="daytime">Day Shift</label>
+            <input type="radio" name="daytime" id="daytime" aria-label="dayshift"><br>
+            <label for="nighttime">Night Shift</label>
+            <input type="radio" name="nighttime" id="nighttime"><br>
+            <input type="reset" value="Rest Timing">
+        </fieldset>
+    </form>
+
 </body>
 </html>
