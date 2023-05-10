@@ -1,0 +1,17 @@
+p#first{
+    color:darkred;
+    font-size: 25px;
+}
+p.second{
+    color: green;
+    font-size: 25px;
+}
+p.two{
+    color: darkgoldenrod;
+}
+p.one{
+    font-size: 40px;
+}
+p.three{
+    display: block;
+}

@@ -1,0 +1,12 @@
+a:link{
+    color: red;
+}
+a:visited{
+    color: chartreuse;
+}
+a:hover{
+    background-color: blue;
+}
+h3:hover{
+    background-color: crimson;
+}
