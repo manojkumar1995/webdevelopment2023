@@ -1,0 +1,44 @@
+div.first{
+    width: 200px;
+    border-width: 2px;
+    border-color: red;
+    border-style: dotted;
+    border-radius:25px;
+    /* border-bottom: 2px solid red; */
+    /* border-top: 2px solid red; */
+
+    /* border: 2px solid grey; */
+    
+
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-bottom: 0px; */
+    margin: 25px 25px;
+
+    padding: 25px;
+}
+
+div.second{
+    width: 200px;
+    border-width: 2px;
+    border-color: red;
+    border-style:double;
+    border-radius:0px;
+    margin: 30px 40px;
+    padding: 30px;
+}
+
+
+h2.first{
+    border-width: inherit;
+    border-color: inherit;
+    border-style: inherit;
+    /* border: 1px solid red; */
+}
+p.second{
+    /* border-width: 2px;
+    border-color: blue;
+    border-style: inherit; */
+    border: 2px solid blue;
+}
