@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/flexbox.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="one">
+            <h1>Hello1</h1>
+        </div>
+        <div class="two">
+            <h1>Hello2</h1>
+        </div>
+        <div class="three">
+            <h1>Hello3</h1>
+        </div>
+        <div class="three">
+            <h1>Hello4</h1>
+        </div>
+        <div class="three">
+            <h1>Hello5</h1>
+        </div>
+    </div><br><br>
+    <button class="btn" onclick="sort(this);" value="ON">Sort</button>
+    <script>
+        function sort(e){
+            if (e.value == "OFF") {
+                e.value = "ON";
+                document.getElementById("main").style.flexDirection = 'row-reverse';
+            } else {
+                e.value = "OFF";
+                document.getElementById("main").style.flexDirection = 'row';
+            }
+        }
+    </script>
+</body>
+</html>
