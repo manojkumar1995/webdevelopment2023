@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  border: 5px solid black;
+  background-color: aqua;
+  color: chocolate;
+}
+
+p {
+  color: darkorange;
+  font-size: 20px;
+}
+
+.one {
+  height: 200px;
+  width: 200px;
+  border: 5px solid chartreuse;
+  /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px; */
+  margin: 50px 100px 50px 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.first {
+  height: 150px;
+  width: 150px;
+  border: 6px dashed red;
+  margin: inherit;
+  /* margin:50px 100px 50px 50px; */
+}
+.two > .a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+  text-align: center;
+}
+
+.two {
+  border: 10px double goldenrod;
+  height: auto;
+  padding: 6px;
+}
+
+.a {
+  border: 10px solid salmon;
+  padding: 5px;
+}
+
+.b {
+  border: 10px dotted green;
+  margin: 15px;
+  padding: 5px;
+}
+
+.c {
+  border: 10px groove rgb(33, 158, 236);
+  margin: 20px;
+  padding: 5px;
+}
+
+.d {
+  border: 10px dashed rgb(243, 81, 237);
+  margin: 25px;
+  padding: 5px;
+}
+
+.e {
+  border: 10px ridge rgb(204, 237, 15);
+  margin: 35px;
+  padding: 5px;
+}
+
+.f {
+  border: 6px inset rgb(234, 48, 91);
+  margin: 40px;
+  padding: 5px;
+}
+
+.g {
+  border: 10px outset rgb(13, 236, 95);
+  margin: 45px;
+  padding: 5px;
+}
+
+.h {
+  border-left: 10px solid rgb(246, 196, 34);
+  background-color: fuchsia;
+  padding: 10px;
+  text-align: center;
+  margin: 55px;
+}
+
+.three {
+  height: auto;
+  width: auto;
+  border: 10px solid slateblue;
+  /* padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px; */
+  padding: 30px 25px 20px 20px;
+  background-color: indianred;
+}
+
+.q {
+  height: 100px;
+  width: 150px;
+  border: 10px solid sienna;
+  margin: 30px;
+}
