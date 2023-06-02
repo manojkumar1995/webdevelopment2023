@@ -6,3 +6,19 @@
     border-bottom-color: tomato ;
     /* border-top-color: tomato; */
 }
+.shape-dark{
+    border: 30px solid transparent;
+    margin: 2px;
+    /* width: 0;
+    height: 0; */
+    border-bottom-color: #212529 ;
+    /* border-top-color: tomato; */
+}
+.shape-white{
+    border: 30px solid transparent;
+    margin: 2px;
+    /* width: 0;
+    height: 0; */
+    border-bottom-color: #ffffff ;
+    /* border-top-color: tomato; */
+}
