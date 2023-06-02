@@ -1,3 +1,8 @@
-.triangle{
-    font-size: 20px;
+.shape{
+    border: 30px solid transparent;
+    margin: 2px;
+    /* width: 0;
+    height: 0; */
+    border-bottom-color: tomato ;
+    /* border-top-color: tomato; */
 }
