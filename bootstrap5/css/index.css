@@ -6,3 +6,13 @@
     border-bottom-color: tomato ;
     /* border-top-color: tomato; */
 }
+.fa{
+    font-size: 20px;
+    padding: 20px 15px;
+    color: coral;
+}
+.fs{
+    font-size: 20px;
+    padding: 20px 15px;
+    color:transparent;
+}
