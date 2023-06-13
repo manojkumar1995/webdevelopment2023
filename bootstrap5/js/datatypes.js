@@ -1,7 +1,7 @@
 //Numbers
 let x = 5;
 let y = 15.546464;
-y =y.toFixed(2);
+// y =y.toFixed(2);
 z = BigInt(11111111111111111111111111111111111111111111111111111111111111111111)
 z1 = BigInt(2222222222222222222222222222222222222222222222222222222222222222222)
 console.log(z+z1,typeof (z+z1))
@@ -13,6 +13,11 @@ console.log(decexponential, typeof decexponential)
 
 console.log(x, typeof x)
 console.log(x+y,y-x,x*y,(y/x).toFixed(2))
+
+//Number Methods
+console.log((y/x).toFixed(2),(y/x).toExponential(2),(y/x).toPrecision(3),(y/x).toLocaleString())
+
+// 12.5 12.55 12.5555
 
 let a = "1";
 let b = 2;
@@ -56,3 +61,14 @@ console.log(t+f, t-f , f-t , t*f, f*t ,t/f, f/t)
 let u = undefined;
 let n = null
 console.log(!u, !n, !emptystring); // true, true, true
+
+
+let obj = {
+    "inr":"₹",
+    "term":"Rupee"
+}
+// Symbols
+const inr = Symbol(obj);
+const dollar = Symbol("$");
+console.log(inr.description, typeof inr, dollar)
+
