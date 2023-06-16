@@ -8,8 +8,25 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <p id="first" name="first" class="first" >Welcome</p>
+    <!-- <p id="first" name="first" class="first" >Welcome</p>
     <p class="second" id="second">How to do it?</p>
-    <p class="one two three"> hii how are you?</p>
+    <p class="one two three"> hii how are you?</p> -->
+    <div id="main"></div>
+    <script>
+        var maintext = "Hello World"
+        const main = document.getElementById("main");
+
+        console.log(main)
+        let paragraph = document.createElement("p");
+        let paratext = document.createTextNode(maintext);
+        paragraph.append(paratext); // p tag with text is ready here
+        let h1 = document.createElement("h1");
+        let h1text = document.createTextNode(maintext);
+        h1.append(h1text); // h1 tag with text is ready here
+        main.appendChild(paragraph)
+        main.appendChild(h1)
+        console.log(document)
+
+    </script>
 </body>
 </html>

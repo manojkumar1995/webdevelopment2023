@@ -32,3 +32,69 @@ var cars =new Array("Tesla") // using Array constructor
 cars.push("Audi")
 console.log(cars)
 
+var bikes = ['TVS','HERO','BAJAJ']
+console.log(bikes)
+
+// O/p : ['ATHER', 'OLA', 'BAJAJ']
+
+// bikes[0]= 'ATHER';
+// bikes.pop(1,2)
+// bikes.push('BAJAJ')
+// bikes[1] = 'OLA'
+// console.log(bikes)
+
+
+console.log(bikes.splice(0,0)) // Returns deleted element and modifies original array
+console.log(bikes.splice(0,1,'ATHER',100,'OLA'))// Return deleted element and modifies original array and add new elements before array
+
+console.log(bikes)
+
+// let bikesnew = {"bikes":bikes}
+
+console.log(Array.isArray(bikes)) // Returns true if array type else returns false
+
+let newbikes = bikes.toString();
+console.log(newbikes,typeof newbikes) //O/p: "ATHER,100,OLA,HERO,BAJAJ"
+
+let accnm= '123242323';
+let startdate ='12-06-2023';
+let enddate ='16-06-2023';
+let format ='.pdf'
+
+let uniquefilename = [accnm,startdate,enddate,format]
+console.log(uniquefilename.toString().replace(',','_'))
+
+let a = [1,2,3]
+let b = [4,5]
+let c = [6,7,8]
+let d = [a, b, c]  // [[1,2,3], [4,5], [6,7,8]]
+// [[1,2,3], [4,5], [6,7,8]]
+console.log(d.toString())
+d= d.flat()  // o/p: 1,3,4,5,6,7,8
+
+console.log(d)
+console.log(d[1])
+delete d[1]
+// d[1] = 100
+console.log(d[1])
+console.log(d)
+
+if(d[1] === 2){
+    console.log("YES")
+}else{
+    console.log("NO")
+}
+
+
+let alphabets = ['A','B','C']
+console.log(alphabets.shift()) // Returns shited value and removes it from original Array
+console.log(alphabets)
+
+let alphabets1 = ['E','F','G']
+console.log(alphabets1.unshift('H')) // // Adds new defined value at  starting of  original Array 
+console.log(alphabets1)
+
+alphabets1.forEach((element,index)=>{
+    console.log(index,element)
+})
+
