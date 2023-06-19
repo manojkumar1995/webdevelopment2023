@@ -87,15 +87,7 @@ if(d[1] === 2){
 }
 
 
-let alphabets = ['A','B','C']
-console.log(alphabets.shift()) // Returns shited value and removes it from original Array
-console.log(alphabets)
 
-let alphabets1 = ['E','F','G']
-console.log(alphabets1.unshift('H')) // // Adds new defined value at  starting of  original Array 
-console.log(alphabets1)
 
-alphabets1.forEach((element,index)=>{
-    console.log(index,element)
-})
+
 
