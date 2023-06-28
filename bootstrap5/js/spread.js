@@ -56,4 +56,30 @@ console.log(house_number, city, state) // o/p : 1-2-345 New Jersy XYZ state
 
 console.log(city)
 
+delete employeeAddress.house_number // delete particular key using delete
+
+employeeAddress.houseNumber = "2-3-456" // Adding new key,values into existing obj
+
+console.log(employeeAddress)
+
+Object.keys(employeeAddress)
+// console.log(Object.keys(employeeAddress)) // print all keys in new a array
+// console.log(Object.values(employeeAddress)) // print all Values in new a array
+
+// print all keys in new Line use index 0 for keys and 1 for values
+for(let i=0;i<=Object.keys(employeeAddress).length;i++){
+
+    // console.log(Object.entries(employeeAddreess)[i][0])
+    // using condition to skip undefined 
+    if(i === 4){
+        break
+    }
+}
+console.log("<====================new===============>")
+// using for in loop through the object and get keys one-one
+for (let key in employeeAddress){
+    console.log(key,":",employeeAddress[key])
+}
+
+
 
