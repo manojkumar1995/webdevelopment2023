@@ -82,4 +82,21 @@ for (let key in employeeAddress){
 }
 
 
+const newEmployeeObj = {
+    'fname':'John',
+    'lname':'Doe',
+    'salary':250,
+    'currency':'$',
+    'myNameMethod':function(){
+        return this.fname+" "+this.lname;
+    },
+    'salaryInfoMethod': function(){
+        return String(this.currency)+" "+String(this.salary)
+    }
+}
+
+// this represents current object instance, we can't use this arrow functions/method since it will point current object instance 
+// possible error is Uncaught SyntaxError: Invalid destructuring assignment target (at object
+console.log(newEmployeeObj.myNameMethod())
+console.log(newEmployeeObj.salaryInfoMethod())
 
