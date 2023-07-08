@@ -28,7 +28,8 @@ else{
 
 */
 
-let age = Number(prompt("Enter your age in numbers"))
+// let age = Number(prompt("Enter your age in numbers"))
+let age = 2
 let switchcdnt;
 if(age > 18){
     // console.log("eligible for voting")
@@ -44,6 +45,7 @@ if(age > 18){
     switchcdnt ="D"
 }
 
+switchcdnt ="C"
 console.log(switchcdnt)
 switch(switchcdnt){
     case ("A"):
@@ -54,10 +56,11 @@ switch(switchcdnt){
         break;
     case ("C"):
         console.log("You have no rights to vote")
-        break;
+        
     case ("D"):
         console.log("Not eligible for voting")
-        break
+        break;
     default:
         console.log("Something went wrong ,please check ur input")
 }
+console.log("End of Switch")
