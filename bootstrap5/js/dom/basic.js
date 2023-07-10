@@ -24,8 +24,13 @@ for(i=0;i<=4;i++){
     var br = document.createElement('br')
     console.log(paragraph)
     paragraph.innerText= `New text${i+1} added from Dom`
+    if(i % 2 == 0){
+        paragraph.style.color = 'red';
+    }
+    if(i % 2 !== 0){
+        paragraph.style.color = 'blue';
+    }
     second.appendChild(paragraph)
-    paragraph.style.color ="blue"
     paragraph.style.fontSize= "32px"
     paragraph.style.fontWeight= "bold"
     second.style.background = 'grey'
