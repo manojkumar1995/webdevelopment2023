@@ -24,9 +24,12 @@ newselectAll.forEach(function(element,index){
     element.style.padding = '10px';
     element.style.borderRadius = '8px';
     if(index % 2 ==0 ){
-        
+        element.style.color = 'pink';
+        element.style.backgroundColor = 'yellow';
+        console.log(index);
     }else{
         element.style.color = 'blue';
         element.style.backgroundColor = 'grey';
+        console.log(index);
     }
 })
