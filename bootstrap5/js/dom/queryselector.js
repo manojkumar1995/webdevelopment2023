@@ -4,21 +4,22 @@ const firsth1 = document.querySelector('.main #h1') // o/p : single first elemen
 // const firsth1 = document.getElementsByTagNameNS('h1',3) // o/p :NodeList
 
 firsth1.style.color= 'indigo'
-console.log(firsth1)
+// console.log(firsth1)
 
 
 const allselected = document.querySelectorAll('h2')
-console.log(allselected)
+// console.log(allselected)
 
 let newselectAll = Array.from(allselected)
 
-console.log(newselectAll)
+// console.log(newselectAll)
 
 newselectAll.forEach(function(element,index){
-    // console.log(index,element)
+    index+=1
+    console.log(index,element)
     var value = element.innerHTML;
-    console.log(value)
-    element.innerHTML = value.toUpperCase()
+    // console.log(value)
+    element.innerHTML = value.toUpperCase()+`${index}`
     element.style.color = 'red';
     element.style.backgroundColor = 'black';
     element.style.padding = '10px';
@@ -26,10 +27,10 @@ newselectAll.forEach(function(element,index){
     if(index % 2 ==0 ){
         element.style.color = 'pink';
         element.style.backgroundColor = 'yellow';
-        console.log(index);
+        // console.log(index);
     }else{
         element.style.color = 'blue';
         element.style.backgroundColor = 'grey';
-        console.log(index);
+        // console.log(index);
     }
 })
