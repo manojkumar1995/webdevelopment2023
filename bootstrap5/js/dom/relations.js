@@ -23,3 +23,13 @@ childrens[1].previousElementSibling.style.color = 'orange'
 childrens[0].nextElementSibling.nextElementSibling.nextElementSibling.style.color = 'green'
 console.log(childrens[0].parentElement)
 childrens[0].parentElement.style.border = 'grey 1px solid'
+
+// using htmlcollection with regular forloop
+var childrensNew = parent.children;
+console.log(childrensNew)
+
+for(i=0;i <= childrensNew.length-1;i++){
+    console.log(childrensNew[i].innerText)
+}
+
+
