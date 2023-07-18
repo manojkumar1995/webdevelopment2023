@@ -44,7 +44,7 @@ let input = document.createElement('input');
 input.type="text"
 input.className='main'
 input.placeholder= "hello"
-console.log(input)
+// console.log(input)
 // elementDiv = document.getElementById('second')
 // elementDiv.appendChild(input)
 
@@ -57,6 +57,16 @@ for(const [key,value] of Object.entries(inputsObj)){
     input.className='main'
     input.placeholder= value
     input.id = key
+    if (value.length % 2 == 0) {
+        console.log('even');
+        input.style.backgroundColor = 'blue';
+        input.style.color = 'red';
+    }
+    else{
+        console.log('odd');
+        input.style.backgroundColor = 'red';
+    }
+    input.style.fontSize = '20px'
     console.log(input)
     elementDiv = document.getElementById('second')
     elementDiv.appendChild(input)
