@@ -60,11 +60,13 @@ for(const [key,value] of Object.entries(inputsObj)){
     if (value.length % 2 == 0) {
         console.log('even');
         input.style.backgroundColor = 'blue';
+        // input.style.color = 'red';
         input.style.color = 'red';
     }
     else{
         console.log('odd');
         input.style.backgroundColor = 'red';
+        input.style.color = 'white';
     }
     input.style.fontSize = '20px'
     console.log(input)

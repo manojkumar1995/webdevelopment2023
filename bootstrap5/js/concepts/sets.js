@@ -10,7 +10,7 @@ console.log( arr, obj) // o/p :  [1, 2, 3] ,{name: 'one', symobol: '1'}
 // console.log(Object.keys(obj).length)
 
 
-const arr = [1,2,3,4,5,6,3,4,5]
+const arr = [1,2,3,4,5,6,3,4,'5',false]
 console.log(arr)
 const numberSet =new Set(arr) // set removes all duplicate elements
 //set doesn't maintain oder of sequence /insertion it will be in random order
