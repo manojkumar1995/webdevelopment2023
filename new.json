@@ -1,0 +1,30 @@
+{
+    "company-1":[
+        {
+            "Name" : "Obul Reddy",
+            "Age" : 23,
+            "Address" : "India",
+            "Postal-code" : 516002,
+            "Status" : "Active"
+        }
+    ],
+    "company-2":[
+        {
+            "Name" :"Teja",
+            "Age" : 21,
+            "Address" : "India",
+            "Postal-code" : 516020,
+            "Status" : "Active"
+        }
+    ],
+    "company-3":[
+        {
+            "Name" :"vivek",
+            "Age" : 22,
+            "Address" : "India",
+            "Postal-code" : 516010,
+            "Status" : "Active"
+        }
+    ]
+
+}

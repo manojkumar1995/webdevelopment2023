@@ -15,24 +15,42 @@
     <p id="result"></p>
     <script>
         var result;
-        function loadText(){
-            console.log("Hello")
-            var xhr = new XMLHttpRequest()
-            xhr.open('GET','./../../Git_notes.txt',true)
-            xhr.onload = function(){
+        // function loadText(){
+        //     console.log("Hello")
+        //     var xhr = new XMLHttpRequest()
+        //     xhr.open('GET','./../../Git_notes.txt',true)
+        //     xhr.onload = function(){
+        //         if(this.status == 200){
+        //             console.log("HI")
+        //             console.log(this.responseText)
+        //             result = this.responseText;
+        //             console.log(typeof result)
+        //             document.getElementById('result').innerHTML = result;
+        //         }
+        //     }
+        //     xhr.send()
+        // }
+        // document.getElementById('submit').addEventListener('click',loadText)
+        // //console.log()
+        
+        function open(){
+            let well = new XMLHttpRequest()
+            well.open('GET','./../../new.json',true)
+            well.onload = function(){
                 if(this.status == 200){
-                    console.log("HI")
-                    console.log(this.responseText)
+                    console.log('Hello')
                     result = this.responseText;
-                    console.log(typeof result)
-                    document.getElementById('result').innerHTML = result;
+                    result = document.getElementById('result').innerHTML = result;
                 }
             }
-            xhr.send()
+            well.send()
         }
-        document.getElementById('submit').addEventListener('click',loadText)
-        //console.log()
-        
+        document.getElementById('submit').addEventListener('click',open)
+
+
+
+
+
     </script>
 </body>
 </html>
