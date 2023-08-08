@@ -1,29 +1,29 @@
 {
-    "company-1":[
+    "company1":[
         {
-            "Name" : "Obul Reddy",
-            "Age" : 23,
-            "Address" : "India",
-            "Postal-code" : 516002,
-            "Status" : "Active"
+            "name" : "Obul Reddy",
+            "age" : 23,
+            "address" : "India",
+            "postalCode" : 516002,
+            "status" : "Active"
         }
     ],
-    "company-2":[
+    "company2":[
         {
-            "Name" :"Teja",
-            "Age" : 21,
-            "Address" : "India",
-            "Postal-code" : 516020,
-            "Status" : "Active"
+            "name" :"Teja",
+            "age" : 21,
+            "address" : "India",
+            "postalCode" : 516020,
+            "status" : "Active"
         }
     ],
-    "company-3":[
+    "company3":[
         {
-            "Name" :"vivek",
-            "Age" : 22,
-            "Address" : "India",
-            "Postal-code" : 516010,
-            "Status" : "Active"
+            "name" :"vivek",
+            "age" : 22,
+            "address" : "India",
+            "postalCode" : 516010,
+            "status" : "Active"
         }
     ]
 

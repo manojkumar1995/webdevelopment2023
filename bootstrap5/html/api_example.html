@@ -11,10 +11,22 @@
     </head>
 <body>
     <h1>Example for API</h1>
-    <button id="submit">GET DATA</button>
-    <p id="result" class="text-primary display-5 mx-3 my-3 px-4 py-3"></p>
+    <button id="submit" class="btn btn-danger">GET DATA</button>
+    <div id="display">
+        <p id="name" class="text-primary display-2 mx-3 my-3 px-4 py-3 fw-bold"></p>
+        <p id="age" class="text-success display-2 mx-3 my-3 px-4 py-3 fw-bold"></p>
+        <p id="address" class="text-dark display-2 mx-3 my-3 px-4 py-3 fw-bold"></p>
+        <p id="postalCode" class="text-danger display-2 mx-3 my-3 px-4 py-3 fw-bold"></p>
+        <p id="status" class="text-secondary display-2 mx-3 my-3 px-4 py-3 fw-bold"></p>
+    </div>
     <script>
-        var result;
+    var result;
+    let name = document.getElementById('name');
+    let age = document.getElementById('age')
+    let address = document.getElementById('address')
+    let postalCode = document.getElementById('postalCode')
+    let status = document.getElementById('status')
+
         // function loadText(){
         //     console.log("Hello")
         //     var xhr = new XMLHttpRequest()
@@ -34,16 +46,27 @@
         // //console.log()
         
         function open(){
-            let well = new XMLHttpRequest()
-            well.open('GET','./../../new.json',true)
-            well.onload = function(){
+            let xhr = new XMLHttpRequest()
+            xhr.open('GET','./../../new.json',true)
+            xhr.onload = function(){
                 if(this.status == 200){
-                    console.log('Hello')
-                    result = this.responseText;
-                    result = document.getElementById('result').innerHTML = result;
+                    result = JSON.parse(this.responseText);
+                    console.log(result, typeof result)
+                    let now = result['company1'][0];
+                    console.log(now)
+                    let nameF =result['company1'][0]['name']; 
+                    let ageF =result['company1'][0]['age']; 
+                    let addressF =result['company1'][0]['address']; 
+                    let postalCodeF =result['company1'][0]['postalCode']; 
+                    let statusF =result['company1'][0]['status']; 
+                    name.innerHTML = 'Name' + ' : ' + nameF;
+                    age.innerHTML = 'Age' + ' : ' + ageF;
+                    address.innerHTML = 'Address' + ' : ' + addressF;
+                    postalCode.innerHTML = 'postalCode' + ' : ' + postalCodeF;
+                    status.innerHTML = 'Status' + ' : ' + statusF;
                 }
             }
-            well.send()
+            xhr.send()
         }
         document.getElementById('submit').addEventListener('click',open)
 
